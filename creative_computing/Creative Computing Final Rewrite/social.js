@@ -27,8 +27,10 @@ function gotData(data) { //API call
 
 function draw() {
   background(0); //black background
+  fill(255);
   if (likes) { //if the 'likes' function is called
-    ellipse(100,100, likes.data.likes.count);
-    text("dicks", 300, 300); //create an ellipse at 100,100 with the diameter equal to number of likes
+    ellipse(100,100, likes.data.likes.count); //create an ellipse at 100,100 with the diameter equal to number of likes
+    text(likes.data.likes.count, 350, 100);
+      fill(255);
   }
 }
