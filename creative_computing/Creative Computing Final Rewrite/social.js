@@ -48,8 +48,8 @@ function setup() {
 }
 
 function likeAsk() { //combines URL and asks for gotData function
-  //var url = api + input.value() + apiKey; //combined URL
-  var url = api + "1500227357917733524_40290595" + apiKey; //temp for ease
+  var url = api + input.value() + apiKey; //combined URL (Comment out for testing and comment in next line)
+  //var url = api + "1500227357917733524_40290595" + apiKey; //test media ID for simplicity. (comment in for testing and comment out previous line)
   setInterval(likeAsk, 1500)
   loadJSON(url, gotData, 'jsonp');
 }
