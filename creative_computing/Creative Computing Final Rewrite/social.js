@@ -21,6 +21,9 @@ var apiKey = '?access_token=40290595.1677ed0.8e890906a6054d7eaf29ebe57bf68e05'; 
 var input;
 var likes;
 var count = 0;
+var oldcount = 0;
+var tosend;
+var counter = 1;
 //var new_count = {
 
 var serial;
@@ -46,18 +49,27 @@ function setup() {
 
 function likeAsk() { //combines URL and asks for gotData function
   //var url = api + input.value() + apiKey; //combined URL
-  var url = api + "1498731189073280804_40290595" + apiKey; //temp for ease
-  setInterval(likeAsk, 10000)
+  var url = api + "1500227357917733524_40290595" + apiKey; //temp for ease
+  setInterval(likeAsk, 1500)
   loadJSON(url, gotData, 'jsonp');
 }
 
 function gotData(data) { //API call
   likes = data; //var likes equals the value returned from the API call
-  count = data.data.likes.count;
+  count = data.data.likes.count; //Var for how many likes
   return data.data.likes.count; //Find the like count in the API call
 }
 
-//function compare(count){
+function compare(){
+
+  if (count > oldcount) {
+    tosend = (count-oldcount);
+    oldcount = count;
+    console.log(tosend);
+    sendValue();
+  }
+
+}
 
 function draw() {
   background(0); //black background
@@ -168,22 +180,30 @@ function draw() {
       textFont("Comic Sans MS")
       textAlign(CENTER)
     }
+    compare();
   }
 }
 
 function serialEvent() {
   var inByte = serial.read();
   inData = inByte;
+  console.log(inData);
 }
 
 function serialError(err) {
   console.log('Something went wrong with the serial port. ' + err);
 }
 
-// function sendValue() {
-//   outbyte = int(map(0, count, 0, 255));
-//   serial.write(outByte);
-// }
+function sendValue() { //tell the arduino to activate
+  setInterval(sendValue, 500)
+  if (counter <= tosend) {
+        serial.write(1);
+        counter++;
+    } else {
+        serial.write(0);
+    }
+
+ }
 
 function serverConnected() {
   console.log('connected to server.');
