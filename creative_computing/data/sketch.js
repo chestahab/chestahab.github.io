@@ -41,4 +41,25 @@ function draw() {
   rect(issX2+30, issY2-15, 6, 30);
   rect(issX2-20, issY2-15, 6, 30);
   rect(issX2+20, issY2-15, 6, 30);
+  
+  fill(255);
+  ellipse(random(width), random(height), 5, 5);
+  ellipse(random(width), random(height), 5, 5);
+  ellipse(random(width), random(height), 5, 5);
+  ellipse(random(width), random(height), 5, 5);
+  ellipse(random(width), random(height), 5, 5);
+  ellipse(random(width), random(height), 5, 5);
+  ellipse(random(width), random(height), 5, 5);
+  ellipse(random(width), random(height), 5, 5);
+  ellipse(random(width), random(height), 5, 5);
+  ellipse(random(width), random(height), 5, 5);
+  ellipse(random(width), random(height), 5, 5);
+  ellipse(random(width), random(height), 5, 5);
+  ellipse(random(width), random(height), 5, 5);
+  ellipse(random(width), random(height), 5, 5);
+  ellipse(random(width), random(height), 5, 5);
+  ellipse(random(width), random(height), 5, 5);
+  ellipse(random(width), random(height), 5, 5);
+  ellipse(random(width), random(height), 5, 5);
+  
 }
