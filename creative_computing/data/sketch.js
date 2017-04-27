@@ -18,7 +18,7 @@ function gotData(data) {
   //console.log(data.iss_position.latitude);
   position = data;
   var lat = data.iss_position.latitude;
-  var long = data.iss_position.latitude;
+  var long = data.iss_position.longitude;
   issX = round(map(lat, -90, 90, 0, 255));
   issY = round(map(long, -180, 180, 0, 255));
   issX2 = map(lat, -90, 90, 0, width);
