@@ -183,7 +183,7 @@ html, body {
 }
 
 .people_pics img{
-  max-width: 200px;
+  width: 70%;
 }
 
 .bio {
