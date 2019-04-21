@@ -1,0 +1,192 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.section_1{
+  background: #41d380;
+  width: 100%;
+  min-height: 110vh;
+  height: 100vh;
+}
+
+.top_bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  width: 80%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.snakt_logo{
+  max-width: 18em;
+}
+
+.page_links{
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin:0;
+  padding:0;
+  font-family: Roboto;
+  font-weight: lighter;
+  font-size: 1.5em;
+  color: white;
+}
+
+.page_links a {
+  padding-left: 25px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.app_links_container {
+  height: 100%;
+}
+
+.app_links {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button {
+  color: #41D380;
+  background-color: #ffffff;
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 15px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  border-radius: 75px;
+}
+
+.link:hover {
+  color: #ffffff;
+  background: #41D380;
+  transition: all 0.4s ease 0s;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.15), 0 15px 50px 0 rgba(0,0,0,0.10);
+}
+
+.waitlist {
+  text-decoration: underline;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: .8rem;
+  color: #fff;
+}
+
+.waitlist:hover {
+  color: #1B6A3D;
+}
+
+.section_2 {
+  background: #fff;
+  width: 100%;
+  min-height: 75vh;
+  height: 75vh;
+}
+
+.content_2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.screenshot {
+  height: 65vh;
+  max-height: 65vh;
+}
+
+.description_2 {
+  max-width: 45%;
+  font-family: Roboto;
+  font-weight: lighter;
+  font-size: 1.3em;
+  color: #000;
+}
+
+.description_2 h1 {
+  text-align: center;
+}
+
+.section_3 {
+  background: #4CAAFD;
+  width: 100%;
+  min-height: 75vh;
+  height: 75vh;
+}
+
+.video_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.video {
+  height: 55vh;
+  max-height: 55vh;
+}
+
+.section_4 {
+  background: #7C7C7C;
+  width: 100%;
+  min-height: 75vh;
+  height: 75vh;
+}
+
+.people {
+  width: 80%;
+  height: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.people_pics {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.people_pics img{
+  max-width: 200px;
+}
+
+.people_pics #row_1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.people_pics #row_2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
