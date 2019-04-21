@@ -119,7 +119,6 @@ html, body {
 .description_2 {
   max-width: 45%;
   font-family: Roboto;
-  font-weight: lighter;
   font-size: 1.3em;
   color: #000;
 }
@@ -189,4 +188,45 @@ html, body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.section_5 {
+  background: #FF6363;
+  width: 100%;
+  min-height: 75vh;
+  height: 75vh;
+  font-family: Roboto;
+  font-size: 1.3em;
+  color: white;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.section_6 {
+  background: #fff;
+  width: 100%;
+  min-height: 30vh;
+  height: 30vh;
+  font-family: Roboto;
+  font-size: 1.3em;
+}
+
+.press {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
 }
