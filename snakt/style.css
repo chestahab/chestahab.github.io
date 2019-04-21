@@ -286,6 +286,24 @@ input[type=text]:focus {
   border-bottom: 3px solid #fff;
 }
 
+input[type=email] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 0px solid #fff;
+  border-bottom: 3px solid rgba(255,255,255, 0.5);
+  outline: none;
+  background-color: rgba(255, 0, 0, 0);
+  font-family: Roboto;
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 35px;
+}
+
+input[type=email]:focus {
+  border: 0px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
 /* do not group these rules */
 *::-webkit-input-placeholder {
     color: rgba(255,255,255, 0.5);
