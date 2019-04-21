@@ -107,7 +107,7 @@ html, body {
   align-items: center;
   width: 80%;
   height: 100%;
-  max-width: 1500px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -119,12 +119,13 @@ html, body {
 .description_2 {
   max-width: 45%;
   font-family: Roboto;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   color: #000;
 }
 
 .description_2 h1 {
-  text-align: center;
+  text-align: left;
+  font-size: 3.5rem;
 }
 
 .section_3 {
@@ -141,7 +142,7 @@ html, body {
   align-items: center;
   width: 80%;
   height: 100%;
-  max-width: 1500px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -160,12 +161,22 @@ html, body {
 .people {
   width: 80%;
   height: 100%;
-  max-width: 1500px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
+.people h1 {
+  font-family: Roboto;
+  font-weight: bold;
+  color: white;
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 0;
+  padding-top: 5%;
+}
+
 .people_pics {
-  height: 100%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -173,6 +184,26 @@ html, body {
 
 .people_pics img{
   max-width: 200px;
+}
+
+.bio {
+  font-family: Roboto;
+  color: white;
+  text-align: center;
+}
+
+.bio h2 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.bio h3 {
+  font-weight: lighter;
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
 }
 
 .people_pics #row_1{
@@ -193,8 +224,8 @@ html, body {
 .section_5 {
   background: #FF6363;
   width: 100%;
-  min-height: 75vh;
-  height: 75vh;
+  min-height: 55vh;
+  height: 55vh;
   font-family: Roboto;
   font-size: 1.3em;
   color: white;
@@ -203,12 +234,99 @@ html, body {
 .contact {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   width: 80%;
   height: 100%;
-  max-width: 1500px;
+  max-width: 900px;
   margin: 0 auto;
+  padding-top: 5%;
+}
+
+.contact_decription {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  height: 100%;
+}
+
+.contact_decription h1 {
+  font-size: 3.5rem;
+  margin-bottom: 12px;
+  margin-top: 0px;
+}
+
+.contact_decription h2 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.form {
+  font-family: Roboto;
+  font-size: 2rem;
+  height: 100%;
+  max-width: 50%;
+  padding-left:15%;
+}
+
+input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 0px solid #fff;
+  border-bottom: 3px solid rgba(255,255,255, 0.5);
+  outline: none;
+  background-color: rgba(255, 0, 0, 0);
+  font-family: Roboto;
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 35px;
+}
+
+input[type=text]:focus {
+  border: 0px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+/* do not group these rules */
+*::-webkit-input-placeholder {
+    color: rgba(255,255,255, 0.5);
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: white;
+    opacity: .5;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: white;
+    opacity: .5;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: rgba(255, 255, 255, 0.5);
+}
+*::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgba(255, 255, 255, 0.5);
+}
+*::placeholder {
+    /* modern browser */
+    color: rgba(255, 255, 255, 0.5);
+}
+
+input[type=submit] {
+  background-color: rgba(255, 255, 255, .5);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Roboto;
+  font-size: 1rem;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color: #FFB1B1;
 }
 
 .section_6 {
@@ -229,4 +347,8 @@ html, body {
   height: 100%;
   max-width: 1500px;
   margin: 0 auto;
+}
+
+.press img {
+  max-width: 30%;
 }
