@@ -396,7 +396,8 @@ input[type=submit]:hover {
 
   .snakt_logo {
     margin: 0 auto;
-    max-width: 22em;
+    width: 22em;
+    max-width: 90%;
   }
 
   .page_links {
@@ -423,7 +424,8 @@ input[type=submit]:hover {
     text-align: center;
     font-size: 1.5rem;
     padding: 15px;
-    width: 350px;
+    min-width: 300px;
+
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
@@ -431,16 +433,10 @@ input[type=submit]:hover {
   }
 
   .waitlist {
-    text-decoration: underline;
-    font-family: Roboto, sans-serif;
-    font-weight: 500;
-    text-align: center;
     font-size: 1.1rem;
-    color: #fff;
   }
 
   .description_2 h1 {
-    text-align: left;
     font-size: 3.5rem;
   }
 
@@ -456,19 +452,15 @@ input[type=submit]:hover {
 
   .description_2 {
     max-width: 60%;
-    font-family: Roboto;
     font-size: 1.1rem;
-    color: #000;
     padding-left: 20px;
   }
 
   .description_2 h1 {
-    text-align: left;
     font-size: 2.5rem;
   }
 
   .section_4 {
-    background: #7C7C7C;
     width: 100%;
     height: 650px;
   }
@@ -481,29 +473,18 @@ input[type=submit]:hover {
   }
 
   .people h1 {
-    font-family: Roboto;
-    font-weight: bold;
-    color: white;
     font-size: 2.5rem;
-    text-align: center;
-    margin: 0;
     padding-top: 3%;
     padding-bottom: 3%;
   }
 
 
   .bio h2 {
-    font-weight: bold;
     font-size: 1.2rem;
-    margin: 0;
-    padding: 0;
   }
 
   .bio h3 {
-    font-weight: lighter;
     font-size: 1.1rem;
-    margin: 0;
-    padding: 0;
   }
 
 }
@@ -522,15 +503,7 @@ input[type=submit]:hover {
     display: none;
   }
 
-  /*.screenshot_2 {
-    display: block;
-    max-width: 90%;
-    margin: 0 auto;
-    z-index: 0;
-  } */
-
   .section_2 {
-    background: #fff;
     width: 100%;
     height: 1000px;
   }
@@ -540,31 +513,23 @@ input[type=submit]:hover {
     background-image: url(images/screenshot_2.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    padding-top: 380px;
-  }
-
-  .screenshot {
-    height: 80%;
+    padding-top: 80%;
   }
 
   .description_2 {
     max-width: 100%;
-    font-family: Roboto;
     font-size: 1.3rem;
-    color: #000;
     padding-left: 0px;
   }
 
   .description_2 h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.2rem;
     padding: 0;
     margin: 0;
   }
 
   .section_4 {
-    background: #7C7C7C;
-    width: 100%;
     height: 2100px;
   }
 
@@ -572,18 +537,10 @@ input[type=submit]:hover {
     width: 80%;
     height: 100%;
     max-width: 900px;
-    margin: 0 auto;
   }
 
   .people h1 {
-    font-family: Roboto;
-    font-weight: bold;
-    color: white;
     font-size: 3rem;
-    text-align: center;
-    margin: 0;
-    padding-top: 3%;
-    padding-bottom: 3%;
   }
 
   .people_pics {
@@ -599,16 +556,8 @@ input[type=submit]:hover {
   }
 
   .bio {
-    font-family: Roboto;
-    color: white;
-    text-align: center;
     padding-bottom: 20px;
     max-width: 60%;
-  }
-
-  #alessandra {
-    padding: 0;
-    margin: 0
   }
 
   .pics_content {
