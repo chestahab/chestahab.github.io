@@ -4,128 +4,135 @@
 <head>
   <title>Snakt</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style2.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
 </head>
 
 <body>
   <div class="section_1">
-      <div class="top_bar">
-        <img class="snakt_logo" src="images/snakt_logo.png" alt="snakt logo">
-        <ul class="page_links">
-          <a href="#what">What</a>
-          <a href="#who">Who</a>
-          <a href="#demo">Demo</a>
-          <a href="#contact">Contact</a>
-          <a href="#press">Press</a>
-        </ul>
+    <div class="topnav" id="myTopnav">
+      <img class="snakt_logo" src="images/snakt_logo.png" alt="snakt logo">
+      <a href="#what">What</a>
+      <a href="#who">Who</a>
+      <a href="#demo">Demo</a>
+      <a href="#contact">Contact</a>
+      <a href="#press">Press</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="app_links_container">
+      <div class="app_links">
+        <a class="button" href="https://itunes.apple.com/us/app/snakt/id712367655?mt" target="_blank" rel="nofollow noopener">Get Snakt on the App Store</a>
+        <a class="waitlist" href="https://goo.gl/forms/iz9aW64vHcVIhwCR2" target="_blank" rel="nofollow noopener">On Android? Join Our Waitlist!</a>
       </div>
-      <div class="app_links_container">
-        <div class="app_links">
-          <a class="button" href="https://itunes.apple.com/us/app/snakt/id712367655?mt" target="_blank" rel="nofollow noopener">Get Snakt on the App Store</a>
-          <a class="waitlist" href="https://goo.gl/forms/iz9aW64vHcVIhwCR2" target="_blank" rel="nofollow noopener">On Android? Join Our Waitlist!</a>
-        </div>
-      </div>
+    </div>
   </div>
   <div class="section_2">
-    <a name="what"></a>
-    <div class="content_2">
-      <img class="screenshot" src="images/screenshot.png" alt="Snakt Profile Screenshot">
-      <div class="description_2">
-        <h1> What is Snakt?</h1>
-        <!-- <img class="screenshot_2" src="images/screenshot_2.png" alt="Snakt Profile Screenshot"> -->
-        <p>Snakt is video conversations
-          <br>
-          <br>• Watch and reply to original content from top creators, musicians, celebrities, and more.
-          <br>
-          <br>• Reply to any video with a video of your own.
-          <br>
-          <br>• Replies can be answered by the creators - if they respond, your video becomes a part of the post!
-          <br>
-          <br>• Add a gift to your reply to reward creators for answering.
-          <br>
-          <br>• Give a gift to any post, or to any creator
-          <br>
-          <br>• Get free coins just by being active on Snakt
-        </p>
+      <a name="what"></a>
+      <div class="content_2">
+        <div class="ss">
+            <img id="screenshot" src="images/screenshot_1.png" alt="snakt screenshot">
+        </div>
+        <div class="info_2_container">
+        <div class="info_2">
+          <h1>What is Snakt?</h1>
+          <h2>Snakt is video conversations</h2>
+          <ul>
+            <li> Watch and reply to original content from top creators, musicians, celebrities, and more.</li>
+            <li> Reply to any video with a video of your own.</li>
+            <li> Replies can be answered by the creators - if they respond, your video becomes a part of the post!</li>
+            <li> Add a gift to your reply to reward creators for answering.</li>
+            <li> Give a gift to any post, or to any creator</li>
+            <li> Get free coins just by being active on Snakt</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
   <div class="section_3">
-    <a name="demo"></a>
-    <div class="video_container">
-      <div class="video">
-        <video width="100%" height="100%" controls>
-          <source src="images/rathervid.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+      <a name="demo"></a>
+      <div class="content_3">
+        <div class="video">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/pvuN_WvF1to" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
-    </div>
   </div>
   <div class="section_4">
     <a name="who"></a>
-    <div class="people">
-      <h1>Who Are We?</h1>
-      <div class="people_pics">
-        <div class="pics_content">
-          <div class="bio">
-            <img src="images/tristan.png" alt="Tristan Snell">
-            <h2>Tristan Snell</h2>
-            <h3>CEO</h3>
-          </div>
-          <div class="bio">
-            <img src="images/alex.png" alt="Alex Picel">
-            <h2>Alex Picel</h2>
-            <h3>CTO</h3>
-          </div>
-          <div class="bio">
-            <img src="images/gaetan.png" alt="Gatean Bonhomme">
-            <h2>Gaetan Bonhomme</h2>
-            <h3>President</h3>
-          </div>
-          <div class="bio">
-            <img src="images/rita.png" alt="Rita Zakirova">
-            <h2>Rita Zakirova</h2>
-            <h3>iOS Developer</h3>
-          </div>
-          <div class="bio">
-            <img src="images/dakota.png" alt="Dakota Deady">
-            <h2>Dakota Deady</h2>
-            <h3>Product & Community</h3>
-          </div>
-          <div class="bio" id="alessandra">
-            <img src="images/alessandra.png" alt="Alessandra Burril">
-            <h2>Alessandra Burril</h2>
-            <h3>Operations</h3>
-          </div>
+    <div class="content_4">
+      <div class="title">
+        <h1>Who Are We?</h1>
+      </div>
+      <div class="people">
+        <div class="bio">
+          <img src="images/tristan.png" alt="Tristan Snell">
+          <h1>Tristan Snell</h1>
+          <h2>CEO</h2>
+        </div>
+        <div class="bio">
+          <img src="images/alex.png" alt="Tristan Snell">
+          <h1>Alex Picel</h1>
+          <h2>CTO</h2>
+        </div>
+        <div class="bio">
+          <img src="images/gaetan.png" alt="Tristan Snell">
+          <h1>Gaetan Bonhomme</h1>
+          <h2>President</h2>
+        </div>
+        <div class="bio">
+          <img src="images/rita.png" alt="Tristan Snell">
+          <h1>Rita Zakirova</h1>
+          <h2>iOS Developer</h2>
+        </div>
+        <div class="bio">
+          <img src="images/dakota.png" alt="Tristan Snell">
+          <h1>Dakota Deady</h1>
+          <h2>Product & Community</h2>
+        </div>
+        <div class="bio">
+          <img src="images/alessandra.png" alt="Tristan Snell">
+          <h1>Alessandra Burril</h1>
+          <h2>Operations</h2>
         </div>
       </div>
     </div>
   </div>
   <div class="section_5">
-    <a name="contact"></a>
-    <div class="contact">
-      <div class="contact_decription">
-        <h1>Contact</h1>
-        <h2>If you have any questions, send us an email and we'll get back to you as soon as possible. <h2>
-      </div>
-      <div class="form">
-        <form action="https://formspree.io/dakota@snakt.us" method="POST">
-          <label for="name">Name</label>
-          <input tabindex="0" type="text" name="name" placeholder="Tell us who you are">
+      <a name="contact"></a>
+      <div class="contact">
+        <div class="contact_decription">
+          <h1>Contact</h1>
+          <h2>If you have any questions, send us an email and we'll get back to you as soon as possible</h2>
+        </div>
+        <div class="form">
+          <form action="https://formspree.io/dakota@snakt.us" method="POST">
+            <label for="name">Name</label>
+            <input tabindex="0" type="text" name="name" placeholder="Tell us who you are">
 
-          <label for="email">Email</label>
-          <input tabindex="0" type="email" name="email" placeholder="How can we contact you?">
+            <label for="email">Email</label>
+            <input tabindex="0" type="email" name="email" placeholder="How can we contact you?">
 
-          <label for="message">Message</label>
-          <input tabindex="0" type="text" name="message" placeholder="How can we help?">
+            <label for="message">Message</label>
+            <input tabindex="0" type="text" name="message" placeholder="How can we help?">
 
-          <input type="submit" value="Submit">
-        </form>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="section_6">
+    <div class="section_6">
     <a name="press"></a>
     <div class="press">
       <img src="images/polygon.png" alt="Polygon">
@@ -133,6 +140,8 @@
       <img src="images/atlantic.png" alt="The Atlantic">
     </div>
   </div>
-</body>
+
+
+  </body>
 
 </html>
