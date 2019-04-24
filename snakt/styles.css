@@ -307,7 +307,7 @@ html, body {
     /* modern browser */
      color: rgba(255, 255, 255, 0.5);
 }
- input[type=submit] {
+ button[type=submit] {
      background-color: rgba(255, 255, 255, .5);
      color: white;
      padding: 12px 20px;
@@ -317,7 +317,7 @@ html, body {
      font-family: Roboto;
      font-size: 1rem;
 }
- input[type=submit]:hover {
+ button[type=submit]:hover {
      background-color: white;
      color: #FFB1B1;
 }
