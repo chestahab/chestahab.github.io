@@ -189,7 +189,14 @@ html, body {
 }
  .bio img {
      width: 230px;
+    -webkit-border-radius: 1000px;
 }
+
+.bio img:hover{
+  transition: all 0.2s ease 0s;
+  box-shadow: 5px 5px 30px 0 rgba(0,0,0,0.2),  0 15px 25px 0 rgba(0,0,0,0.15);
+}
+
  .bio h1 {
      font-family: Roboto;
      font-weight: bold;
