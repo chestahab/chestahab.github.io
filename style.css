@@ -12,6 +12,10 @@ a {
   text-decoration: none:
 }
 
+a: link {
+  text-decoration: none;
+}
+
 h1 {
   font-family: new-spirit, serif;
   font-weight: 600;
